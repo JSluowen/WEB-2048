@@ -25,7 +25,7 @@ function LocalStorageManager() {
   var supported = this.localStorageSupported();
   this.storage = supported ? window.localStorage : window.fakeStorage;
 }
-
+// 检测浏览器是否支持localStorage存储
 LocalStorageManager.prototype.localStorageSupported = function () {
   var testKey = "test";
   var storage = window.localStorage;
