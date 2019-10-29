@@ -1,0 +1,26 @@
+  .body-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../image/bgi.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .top-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(240, 228, 228, 0.2);
+    position: absolute;
+    z-index: 99999;
+    display: none;
+  }
+  .top-context{
+    position: absolute;
+    width: 500px;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }

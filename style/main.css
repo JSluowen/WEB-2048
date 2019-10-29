@@ -7,9 +7,6 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
-body {
-  margin: 80px 0; }
-
 .heading:after {
   content: "";
   display: block;
@@ -62,7 +59,9 @@ h1.title {
   border-radius: 3px;
   color: white;
   margin-top: 8px;
-  text-align: center; }
+  text-align: center;
+  box-sizing: content-box;
+}
   .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
@@ -117,7 +116,11 @@ hr {
 
 .container {
   width: 500px;
-  margin: 0 auto; }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);  
+}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -483,10 +486,12 @@ hr {
 
 .game-intro {
   float: left;
-  line-height: 42px;
-  margin-bottom: 0; }
+  line-height: 1.2;
+  margin-bottom: 0;
+  width: 220px;
+}
 
-.restart-button {
+.restart-button,.top-button {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
@@ -497,7 +502,14 @@ hr {
   line-height: 42px;
   display: block;
   text-align: center;
-  float: right; }
+  float: right; 
+  margin-left:20px;
+}
+.restart-button:hover,.top-button:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color:#f9f6f2;
+}
 
 .game-explanation {
   margin-top: 50px; }

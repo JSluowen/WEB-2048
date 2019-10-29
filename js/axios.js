@@ -1,7 +1,7 @@
 function Axios() {
   // 定义axios请求的基础配置信息
   // axios.defaults.baseURL = 'https://api.example.com';
-  axios.defaults.baseURL = 'http://127.0.0.1:7002/api';
+  axios.defaults.baseURL = 'http://127.0.0.1:7001/api';
   axios.defaults.timeOut = 10000;
   axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
   //允许axio请求携带cookies
